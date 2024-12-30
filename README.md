@@ -21,7 +21,7 @@ Go module to add emoji support to [go-markdown](https://github.com/gomarkdown/ma
 `go-markdown-emoji` is a standard Go module which can be installed with:
 
 ```sh
-go get github.com/mcdee/go-markdown-emoji
+go get github.com/4strodev/go-markdown-emoji
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ Jim McDonald: [@mcdee](https://github.com/mcdee).
 
 ## Contribute
 
-Contributions welcome. Please check out [the issues](https://github.com/mcdee/go-markdown-emoji/issues).
+Contributions welcome. Please check out [the issues](https://github.com/4strodev/go-markdown-emoji/issues).
 
 ## License
 

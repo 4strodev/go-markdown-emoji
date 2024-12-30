@@ -2,7 +2,6 @@ package emoji
 
 import (
 	"bytes"
-	"fmt"
 
 	"github.com/gomarkdown/markdown/ast"
 )
@@ -26,7 +25,7 @@ func Parser(data []byte) (ast.Node, []byte, int) {
 		// Already processed
 		return nil, nil, 0
 	}
-	if bytes.Index(data, []byte("class=\"emoji\"")) != -1 {
+	if bytes.Contains(data, []byte("class=\"emoji\"")) {
 		// Already processed
 		return nil, nil, 0
 	}
@@ -53,8 +52,8 @@ func Parser(data []byte) (ast.Node, []byte, int) {
 			name := string(data[startIndex+1 : endIndex])
 			if isValidEmoji([]byte(name)) {
 				startIndex = endIndex + 1
-				url := fmt.Sprintf(`<img class="emoji" src="%s" alt=":%s:"></img>`, generateURL(name), name)
-				resData = append(resData, []byte(url)...)
+				emoji := getEmoji(name)
+				resData = append(resData, []byte(emoji)...)
 			} else {
 				resData = append(resData, data[startIndex:endIndex]...)
 				startIndex = endIndex
@@ -70,7 +69,7 @@ func Parser(data []byte) (ast.Node, []byte, int) {
 		resData = append(resData, data[startIndex:]...)
 	}
 
-	if bytes.Index(resData, []byte("class=\"emoji\"")) == -1 {
+	if !bytes.Contains(resData, []byte("class=\"emoji\"")) {
 		// Processed with no changes
 		seen[string(resData)] = true
 	}

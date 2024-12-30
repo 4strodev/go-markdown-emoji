@@ -7,7 +7,7 @@ import (
 	"unicode/utf8"
 )
 
-func generateURL(emoji string) string {
+func getEmoji(emoji string) string {
 	code, exists := emojiMap[emoji]
 	if !exists {
 		return ""
@@ -30,5 +30,11 @@ func generateURL(emoji string) string {
 		}
 		curChar++
 	}
+
+	return res
+}
+
+func generateURL(emoji string) string {
+	res := getEmoji(emoji)
 	return fmt.Sprintf("https://twemoji.maxcdn.com/2/svg/%s.svg", res)
 }

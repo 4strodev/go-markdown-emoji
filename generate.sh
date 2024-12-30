@@ -11,7 +11,7 @@ func isValidEmoji(input []byte) bool {
 var emojiMap = map[string]string{
 EOHEADER
 
-curl -s -o - https://raw.githubusercontent.com/muan/emojilib/master/emojis.json | jq -r 'to_entries | sort_by(.key) | .[] | "\"\(.key)\": \"\(.value.char)\","' >>emoji.go
+curl -s -o - https://raw.githubusercontent.com/muan/emojilib/refs/heads/main/dist/emoji-en-US.json | jq -r 'to_entries | sort_by(.key) | .[] | "\"\(.value.[0])\": \"\(.key)\","' >>emoji.go
 
 cat >>emoji.go <<EOFOOTER
 }

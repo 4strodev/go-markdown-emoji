@@ -1,7 +1,6 @@
 package emoji
 
 import (
-	"fmt"
 	"io"
 
 	"github.com/gomarkdown/markdown/ast"
@@ -21,8 +20,8 @@ func Renderer(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool) 
 	}
 
 	name := string(node.(*Node).Literal)
-	url := generateURL(name)
-	w.Write([]byte(fmt.Sprintf(`<img class="emoji" src="%s" alt=":%s:"></img>`, url, name)))
+        emoji := getEmoji(name)
+	w.Write([]byte(emoji))
 
 	return ast.GoToNext, true
 }
