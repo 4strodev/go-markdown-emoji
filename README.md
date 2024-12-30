@@ -1,9 +1,9 @@
 # go-markdown-emoji
 
-[![Tag](https://img.shields.io/github/tag/mcdee/go-markdown-emoji.svg)](https://github.com/mcdee/go-markdown-emoji/releases/)
-[![License](https://img.shields.io/github/license/mcdee/go-markdown-emoji.svg)](LICENSE)
-[![Travis CI](https://img.shields.io/travis/mcdee/go-markdown-emoji.svg)](https://travis-ci.org/mcdee/go-markdown-emoji)
-[![codecov.io](https://img.shields.io/codecov/c/github/mcdee/go-markdown-emoji.svg)](https://codecov.io/github/mcdee/go-markdown-emoji)
+[![Tag](https://img.shields.io/github/tag/4strodev/go-markdown-emoji.svg)](https://github.com/4strodev/go-markdown-emoji/releases/)
+[![License](https://img.shields.io/github/license/4strodev/go-markdown-emoji.svg)](LICENSE)
+[![Travis CI](https://img.shields.io/travis/4strodev/go-markdown-emoji.svg)](https://travis-ci.org/4strodev/go-markdown-emoji)
+[![codecov.io](https://img.shields.io/codecov/c/github/4strodev/go-markdown-emoji.svg)](https://codecov.io/github/4strodev/go-markdown-emoji)
 
 Go module to add emoji support to [go-markdown](https://github.com/gomarkdown/markdown).
 
@@ -28,7 +28,7 @@ go get github.com/4strodev/go-markdown-emoji
 
 `go-markdown-emoji` provides parser and renderer hooks to the markdown engine.  The parser hook is `Parser` and the renderer `Renderer`.
 
-Emojis are signified in Markdown as names between colons, for example `:smile:`.  A full list of the emojis supported can be seen in [emoji.go](https://github.com/mcdee/go-markdown-emoji/blob/master/emoji.go).
+Emojis are signified in Markdown as names between colons, for example `:smile:`.  A full list of the emojis supported can be seen in [emoji.go](https://github.com/4strodev/go-markdown-emoji/blob/master/emoji.go).
 
 ### Example
 
@@ -39,7 +39,7 @@ import (
     "github.com/gomarkdown/markdown"
     "github.com/gomarkdown/markdown/html"
     "github.com/gomarkdown/markdown/parser"
-    emoji "github.com/mcdee/go-markdown-emoji"
+    emoji "github.com/4strodev/go-markdown-emoji"
 )
 
 func main() {
@@ -57,7 +57,7 @@ func main() {
 
 ## Maintainers
 
-Jim McDonald: [@mcdee](https://github.com/mcdee).
+Jim McDonald: [@4strodev](https://github.com/4strodev).
 
 ## Contribute
 
