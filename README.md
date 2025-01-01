@@ -2,7 +2,6 @@
 
 [![Tag](https://img.shields.io/github/tag/4strodev/go-markdown-emoji.svg)](https://github.com/4strodev/go-markdown-emoji/releases/)
 [![License](https://img.shields.io/github/license/4strodev/go-markdown-emoji.svg)](LICENSE)
-[![Travis CI](https://img.shields.io/travis/4strodev/go-markdown-emoji.svg)](https://travis-ci.org/4strodev/go-markdown-emoji)
 [![codecov.io](https://img.shields.io/codecov/c/github/4strodev/go-markdown-emoji.svg)](https://codecov.io/github/4strodev/go-markdown-emoji)
 
 Original creator [mcdee](https://github.com/mcdee/go-markdown-emoji)
