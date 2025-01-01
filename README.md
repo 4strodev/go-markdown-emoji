@@ -4,8 +4,6 @@
 [![License](https://img.shields.io/github/license/4strodev/go-markdown-emoji.svg)](LICENSE)
 [![codecov.io](https://img.shields.io/codecov/c/github/4strodev/go-markdown-emoji.svg)](https://codecov.io/github/4strodev/go-markdown-emoji)
 
-Original creator [mcdee](https://github.com/mcdee/go-markdown-emoji)
-
 Go module to add emoji support to [go-markdown](https://github.com/gomarkdown/markdown).
 
 
@@ -58,7 +56,8 @@ func main() {
 
 ## Maintainers
 
-Jim McDonald: [@4strodev](https://github.com/4strodev).
+(Author) Jim McDonald: [@mcdee](https://github.com/mcdee).
+Alejandro Marin: [@4strodev](https://github.com/4strodev).
 
 ## Contribute
 
