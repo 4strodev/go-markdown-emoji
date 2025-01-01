@@ -5,6 +5,8 @@
 [![Travis CI](https://img.shields.io/travis/4strodev/go-markdown-emoji.svg)](https://travis-ci.org/4strodev/go-markdown-emoji)
 [![codecov.io](https://img.shields.io/codecov/c/github/4strodev/go-markdown-emoji.svg)](https://codecov.io/github/4strodev/go-markdown-emoji)
 
+Original creator [mcdee](https://github.com/mcdee/go-markdown-emoji)
+
 Go module to add emoji support to [go-markdown](https://github.com/gomarkdown/markdown).
 
 
