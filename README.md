@@ -55,9 +55,8 @@ func main() {
 ```
 
 ## Maintainers
-
-(Author) Jim McDonald: [@mcdee](https://github.com/mcdee).
-Alejandro Marin: [@4strodev](https://github.com/4strodev).
+- (Author) Jim McDonald: [@mcdee](https://github.com/mcdee).
+- Alejandro Marin: [@4strodev](https://github.com/4strodev).
 
 ## Contribute
 
